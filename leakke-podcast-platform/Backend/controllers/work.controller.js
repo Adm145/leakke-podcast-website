@@ -3,7 +3,7 @@ const {
   updateWorkService,
   addWorkService,
   deleteWorkService
-} = require('../services/admin.service');
+} = require('../services/work.service');
 
 const { generalError } = require('../utils/error');
 

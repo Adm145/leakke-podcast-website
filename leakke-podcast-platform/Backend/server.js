@@ -23,7 +23,7 @@ app.use((error, req, res, next) => {
   res.status(500).send(error)
 })
 
-// app.use('/images', require('./routes/images.route'))
+app.use('/images', require('./routes/images.route'))
 app.use('/auth', require('./routes/auth.route'))
 app.use('/admin', require('./routes/admin.route'))
 
