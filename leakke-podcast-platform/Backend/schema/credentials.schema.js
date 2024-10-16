@@ -6,8 +6,8 @@ const schema = {
     typeOfEducation: { type: 'string' },
     subject: { type: 'string' },
     gradeAverage: { type: 'number' },
-    description: { type: 'string' },
-    completionStatus: { type: 'string', enum: ['completed', 'ongoing'] }
+    desc: { type: 'string' },
+    completionStatus: { type: 'string', enum: ['completed', 'ongoing'] },
   },
   required: ['institute', 'timePeriod', 'typeOfEducation', 'subject'],
   additionalProperties: false

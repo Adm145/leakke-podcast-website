@@ -1,5 +1,6 @@
 const {
-  getWorkService,
+  getAllWorkService,
+  getWorkByIdService,
   updateWorkService,
   addWorkService,
   deleteWorkService
@@ -7,7 +8,7 @@ const {
 
 const { generalError } = require('../utils/error');
 
-const getWorkController = async () => { }
+const getAllWorkController = async () => { }
 
 const updateWorkController = async () => { }
 
@@ -16,7 +17,7 @@ const addWorkController = async () => { }
 const deleteWorkController = async () => { }
 
 module.exports = {
-  getWorkController,
+  getAllWorkController,
   updateWorkController,
   addWorkController,
   deleteWorkController

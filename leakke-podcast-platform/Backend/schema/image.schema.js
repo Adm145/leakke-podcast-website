@@ -1,16 +1,15 @@
 const schema = {
   type: "object",
   properties: {
-    institute: { type: 'string' },
-    timePeriod: { type: 'string' },
+    title: { type: 'string' },
+    url: { type: 'string' },
     desc: { type: 'string' },
     location: { type: 'string' },
-    isVoluteering: { type: 'boolean' }
   },
-  required: ['institute'],
+  required: ['title', 'url', 'desc'],
   additionalProperties: false
 }
 
 module.exports = {
-  workSchema: schema
+  imageSchema: schema
 }

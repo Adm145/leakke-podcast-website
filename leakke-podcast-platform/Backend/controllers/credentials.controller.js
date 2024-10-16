@@ -1,5 +1,6 @@
 const {
-  getCredentialsService,
+  getAllCredentialsService,
+  getCredentialByIdService,
   updateCredentialsService,
   addCredentialsService,
   deleteCredentialsService,
@@ -7,18 +8,18 @@ const {
 
 const { generalError } = require('../utils/error');
 
-const getCredentialsController = async () => { }
-
-const updateCredentialsController = async () => { }
+const getAllCredentialsController = async () => { }
 
 const addCredentialsController = async () => { }
+
+const updateCredentialsController = async () => { }
 
 const deleteCredentialsController = async () => { }
 
 
 
 module.exports = {
-  getCredentialsController,
+  getAllCredentialsController,
   updateCredentialsController,
   addCredentialsController,
   deleteCredentialsController,

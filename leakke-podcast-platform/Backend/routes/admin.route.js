@@ -11,14 +11,14 @@ const {
 } = require('../controllers/bio.controller');
 
 const {
-  getCredentialsController,
+  getAllCredentialsController,
   updateCredentialsController,
   addCredentialsController,
   deleteCredentialsController
 } = require('../controllers/credentials.controller');
 
 const {
-  getWorkController,
+  getAllWorkController,
   updateWorkController,
   addWorkController,
   deleteWorkController
@@ -30,15 +30,15 @@ route.get('/bio', getBioController);
 route.put('/bio', validateSchema(bioSchema), updateBioController);
 
 // credentials
-route.get('/credentials', getCredentialsController);
+route.get('/credentials', getAllCredentialsController);
 route.post('/credentials', validateSchema(credentialsSchema), addCredentialsController);
-route.put('/credentials', validateSchema(credentialsSchema), updateCredentialsController);
-route.delete('/credentials', deleteCredentialsController);
+route.put('/credentials/:id', validateSchema(credentialsSchema), updateCredentialsController);
+route.delete('/credentials/:id', deleteCredentialsController);
 
 // work
-route.get('/work', getWorkController);
+route.get('/work', getAllWorkController);
 route.post('/work', validateSchema(workSchema), addWorkController);
-route.put('/work', validateSchema(workSchema), updateWorkController);
-route.delete('/work', deleteWorkController);
+route.put('/work/:id', validateSchema(workSchema), updateWorkController);
+route.delete('/work/:id', deleteWorkController);
 
 module.exports = route;

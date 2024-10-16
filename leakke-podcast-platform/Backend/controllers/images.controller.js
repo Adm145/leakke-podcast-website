@@ -1,5 +1,6 @@
 const {
   getAllImagesService,
+  getImageByIdService,
   addImageService,
   updateImageService,
   deleteImageService

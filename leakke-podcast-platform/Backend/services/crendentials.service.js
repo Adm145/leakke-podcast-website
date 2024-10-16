@@ -1,6 +1,9 @@
 const { ObjectId } = require('mongodb');
 
-const getCredentialsService = async () => { }
+const getAllCredentialsService = async () => {
+}
+
+const getCredentialByIdService = async () => { }
 
 const updateCredentialsService = async () => { }
 
@@ -10,7 +13,8 @@ const deleteCredentialsService = async () => { }
 
 
 module.exports = {
-  getCredentialsService,
+  getAllCredentialsService,
+  getCredentialByIdService,
   updateCredentialsService,
   addCredentialsService,
   deleteCredentialsService,

@@ -1,6 +1,8 @@
 const { ObjectId } = require('mongodb');
 
-const getWorkService = async () => { }
+const getAllWorkService = async () => { }
+
+const getWorkByIdService = async () => { }
 
 const updateWorkService = async () => { }
 
@@ -10,7 +12,8 @@ const deleteWorkService = async () => { }
 
 
 module.exports = {
-  getWorkService,
+  getAllWorkService,
+  getWorkByIdService,
   updateWorkService,
   addWorkService,
   deleteWorkService
