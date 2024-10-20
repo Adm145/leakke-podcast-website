@@ -1,6 +1,15 @@
+const errHandler = (req, res, next) => {
+  res.error = (err) => {
+    const [status, msg] = err;
+    res.status(status).send(msg);
+  }
+  next();
+}
+
+
 module.exports = {
   // status: 400
-  userNotFoundError: [400, 'User not found or password is incorrect'],
+  dataNotFoundError: [400, 'Data not found'],
   emailAlreadyExistsError: [400, 'This Email address is already in use'],
 
   // status: 403
@@ -11,4 +20,7 @@ module.exports = {
 
   // status: 500
   generalError: [500, 'Something went wrong'],
+
+  errHandler
 }
+
