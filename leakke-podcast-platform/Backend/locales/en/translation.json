@@ -1,10 +1,13 @@
-[
-  {
-    "name": "english db"
-  },
-  {
-    "username": "Or",
-    "password": "156878943",
-    "id": "61d79114-dec6-4c00-bfce-40cc0f57c56e"
+{
+  "data": {
+    "bio": {
+      "name": "bio"
+    },
+    "credentials": {
+      "name": "credentials"
+    },
+    "work": {
+      "name": "work"
+    }
   }
-]
+}

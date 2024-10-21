@@ -5,7 +5,7 @@ const {
 } = require('../services/he.service')
 
 const getDataController = async (req, res) => {
-  res.send({ message: req.t('name') })
+  res.send(req.t('data'))
 }
 
 const addDataController = (req, res) => {

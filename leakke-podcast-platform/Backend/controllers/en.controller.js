@@ -6,7 +6,7 @@ const {
 
 
 const getDataController = (req, res) => {
-  res.send({ message: req.t('name') })
+  res.send(req.t('data'))
 }
 
 const addDataController = (req, res) => {
