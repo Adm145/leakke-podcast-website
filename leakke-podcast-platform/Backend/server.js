@@ -7,7 +7,7 @@ const { errHandler } = require('./utils/error')
 
 app.use(cors({
   origin: '*'
-}))
+}));
 
 //i18next config
 const i18next = require('i18next')
@@ -16,15 +16,15 @@ const { i18nextInit } = require('./utils/i18next.config')
 i18nextInit();
 app.use(middleware.handle(i18next));
 
-app.use(express.json())
-app.use(errHandler)
+app.use(express.json());
+app.use(errHandler);
 
 
-app.use('/he', require('./routes/he.route'))
-app.use('/en', require('./routes/en.route'))
-// app.use('/amh', require('./routes/amh.route'))
-// app.use('/tig', require('./routes/tig.route'))
-// app.use('/images', require('./routes/images.route'))
-// app.use('/auth', require('./routes/auth.route'))
+app.use('/he', require('./routes/he.route'));
+app.use('/en', require('./routes/en.route'));
+// app.use('/amh', require('./routes/amh.route'));
+// app.use('/tig', require('./routes/tig.route'));
+// app.use('/images', require('./routes/images.route'));
+// app.use('/auth', require('./routes/auth.route'));
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

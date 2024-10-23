@@ -3,28 +3,51 @@ const {
   addDataService,
   deleteDataService
 } = require('../services/en.service');
+const { dataNotFoundError, generalError } = require('../utils/error');
 
 
 const getDataController = (req, res) => {
-  res.send(req.t('data'))
+  try {
+    res.send(req.t('data'))
+  } catch (err) {
+    res.error(dataNotFoundError);
+  }
 }
 
 const addDataController = (req, res) => {
-  const newUser = addDataService(req.body)
-  return res.send(newUser)
+  const { group } = req.body
+  delete req.body.group
+  try {
+    const newEntry = addDataService(req.body, group);
+    return res.send(newEntry)
+  } catch (err) {
+    res.error(generalError);
+  }
 }
 
 const updateDataController = (req, res) => {
-  const { id, username, password } = req.body
-  const body = { username, password }
-  const updated = updateDataService(id, body);
-  return res.send(updated)
+  const { group, id } = req.body
+  delete req.body.group
+  delete req.body.id
+  try {
+    const updated = updateDataService(id, req.body, group);
+    return res.send(updated)
+  } catch (err) {
+    res.error(generalError);
+  }
 }
 
 const deleteDataController = (req, res) => {
-  const { id } = req.body
-  const deleted = deleteDataService(id);
-  return res.send(deleted)
+  // body needs to contain keys
+  // see in db.js -> removeData -> 'else' block
+  // in case of 'object', need keys to be deleted
+  const { group, id, key } = req.body
+  try {
+    const deleted = deleteDataService(id, key, group);
+    return res.send(deleted)
+  } catch (err) {
+    res.error(generalError);
+  }
 }
 
 module.exports = {

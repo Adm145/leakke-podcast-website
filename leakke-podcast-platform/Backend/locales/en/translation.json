@@ -1,13 +1,41 @@
-{
-  "data": {
-    "bio": {
-      "name": "bio"
-    },
-    "credentials": {
-      "name": "credentials"
-    },
-    "work": {
-      "name": "work"
+[
+  {
+    "data": {
+      "bio": {
+        "name": "david",
+        "email": "abc@gmail.com",
+        "hobbies": "hiking",
+        "username": "or",
+        "pass": "15987361fdafdas"
+      },
+      "credentials": [
+        {
+          "title": "Credential 1",
+          "description": "This is the second credential",
+          "url": "https://www.google.com",
+          "id": "25d31ed0-af4d-4e22-bd9a-1b3930158cb8"
+        },
+        {
+          "title": "Credential 2",
+          "description": "This is the second credential",
+          "url": "https://www.google.com",
+          "id": "0b6c5b9e-e00f-41a3-88e9-63be33f24d24"
+        }
+      ],
+      "work": [
+        {
+          "title": "work 1",
+          "description": "This is the first work",
+          "url": "https://www.google.com",
+          "id": "e9dd6088-3d13-4fa3-ba6b-af71168fba36"
+        },
+        {
+          "title": "work 2",
+          "description": "This is the second work",
+          "url": "https://www.google.com",
+          "id": "db58b46e-c704-4a48-bcc9-8453ad1a6c73"
+        }
+      ]
     }
   }
-}
+]

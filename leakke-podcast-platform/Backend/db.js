@@ -4,11 +4,14 @@ const { v4: uuidv4 } = require('uuid');
 
 const newId = uuidv4();
 class DB {
-  constructor(lang) {
-    this.lang = lang;
-    this.path = path.join(__dirname, `locales/${lang}/translation.json`);
+  constructor(dir) {
+    if (dir === 'gallery') {
+      this.path = path.join(__dirname, `locales/gallery.images.json`);
+    } else {
+      this.path = path.join(__dirname, `locales/${dir}/translation.json`);
+    }
   }
-
+  // text data
   get = () => {
     const parsed = JSON.parse(fs.readFileSync(this.path, 'utf-8'));
     return parsed;
@@ -24,28 +27,43 @@ class DB {
     fs.writeFileSync(this.path, JSON.stringify(parsed, null, 2));
   }
 
-  addNew = (item) => {
+  addNew = (item, group) => {
     const parsed = this.get();
-    parsed.push({
-      ...item,
-      id: newId
-    });
+    const data = parsed[0].data;
+    if (Array.isArray(data[group])) {
+      data[group].push({
+        ...item,
+        id: newId
+      })
+    } else {
+      Object.assign(values, item);
+    }
     this.save(parsed);
   }
 
-  updateById = (id, body) => {
+  updateData = (id, body, group) => {
     const parsed = this.get();
-    const itemIndex = parsed.findIndex(i => i.id === id);
-    parsed[itemIndex] = { ...parsed[itemIndex], ...body, id: id }
+    const data = parsed[0].data;
+    if (Array.isArray(data[group])) {
+      const itemIndex = data[group].findIndex(item => item.id === id);
+      data[group][itemIndex] = { ...data[group][itemIndex], ...body, id: id };
+    } else {
+      data[group] = { ...data[group], ...body };
+    }
     this.save(parsed);
   }
 
-  removeById = (id) => {
+  removeData = (id, key, group) => {
     const parsed = this.get();
-    const index = parsed.findIndex(i => i.id === id);
-    parsed.splice(index, 1)
+    const data = parsed[0].data;
+    if (Array.isArray(data[group])) {
+      const itemIndex = data[group].findIndex(item => item.id === id);
+      data[group].splice(itemIndex, 1);
+    } else {
+      delete data[group][key];
+    }
     this.save(parsed);
   }
 }
 
-module.exports = DB; 
+module.exports = DB;

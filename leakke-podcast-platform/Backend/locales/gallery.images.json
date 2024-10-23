@@ -1,14 +1,16 @@
-{
-  "images": {
-    "image1": {
-      "title": "Image 1",
-      "description": "This is the first image",
-      "url": "https://www.google.com"
-    },
-    "image2": {
-      "title": "Image 2",
-      "description": "This is the second image",
-      "url": "https://www.google.com"
+[
+  {
+    "data": {
+      "image1": {
+        "title": "Image 1",
+        "description": "This is the first image",
+        "url": "https://www.google.com"
+      },
+      "image2": {
+        "title": "Image 2",
+        "description": "This is the second image",
+        "url": "https://www.google.com"
+      }
     }
   }
-}
+]

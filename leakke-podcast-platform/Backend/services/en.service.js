@@ -1,16 +1,17 @@
 const DB = require('../db');
 const db = new DB('en');
 
-const addDataService = (newUser) => {
-  return db.addNew(newUser);
+const addDataService = (item, group) => {
+  return db.addNew(item, group);
 }
 
-const updateDataService = async (id, body) => {
-  return db.updateById(id, body);
+const updateDataService = (id, body, group) => {
+  return db.updateData(id, body, group);
+
 }
 
-const deleteDataService = async = (id) => {
-  return db.removeById(id);
+const deleteDataService = (id, key, group) => {
+  return db.removeData(id, key, group);
 }
 
 
