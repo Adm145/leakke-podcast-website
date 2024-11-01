@@ -38,9 +38,6 @@ const updateDataController = (req, res) => {
 }
 
 const deleteDataController = (req, res) => {
-  // body needs to contain keys
-  // see in db.js -> removeData -> 'else' block
-  // in case of 'object', need keys to be deleted
   const { group, id, key } = req.body
   try {
     const deleted = deleteDataService(id, key, group);

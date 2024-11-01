@@ -11,7 +11,7 @@ class DB {
       this.path = path.join(__dirname, `locales/${dir}/translation.json`);
     }
   }
-  // text data
+
   get = () => {
     const parsed = JSON.parse(fs.readFileSync(this.path, 'utf-8'));
     return parsed;
@@ -36,7 +36,7 @@ class DB {
         id: newId
       })
     } else {
-      Object.assign(values, item);
+      Object.assign(data[group], item);
     }
     this.save(parsed);
   }

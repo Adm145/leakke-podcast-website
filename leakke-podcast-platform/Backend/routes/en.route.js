@@ -1,11 +1,11 @@
 const express = require('express')
-const route = express.Router({ mergeParams: true });
+const route = express.Router();
 const {
   getDataController,
   addDataController,
   updateDataController,
   deleteDataController
-} = require('../controllers/en.controller')
+} = require('../controllers/en.controller');
 
 route.get('', getDataController);
 route.post('', addDataController);

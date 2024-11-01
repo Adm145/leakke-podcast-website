@@ -1,0 +1,12 @@
+.navMenuItem {
+  background-color: transparent;
+  border: none;
+  border-bottom: gray 1px solid;
+  padding: 1rem;
+  transition: border-color 200ms ease-in-out, color 100ms ease-in-out;
+}
+
+.navMenuItem:hover {
+  border-color: white;
+  color: lightblue;
+}

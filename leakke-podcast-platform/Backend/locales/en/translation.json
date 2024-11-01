@@ -2,40 +2,62 @@
   {
     "data": {
       "bio": {
-        "name": "david",
-        "email": "abc@gmail.com",
-        "hobbies": "hiking",
-        "username": "or",
-        "pass": "15987361fdafdas"
+        "fullName": "Leakeberhan Yitshak",
+        "familyStatus": "+3",
+        "address": "10/16 Hanoar Haoved Street, Ashkelon, zip code 78751",
+        "workNo": "08-6748145",
+        "cellNo": "050-2323013",
+        "email": "lakebr11@gmail.com, izhak@ashkelon.muni.il",
+        "brief": "in Ethiopia I was a teacher and an education inspector. Along with my government job I was a social leader and activist, in all life aspects. I worked with all different levels of society in 'Shire' at Tigray regional government. I hosted private people and groups, as well as social and international functions. In Israel i taught for the first two years, I counseled and guided droups about different topics such as relocation, education, health, culture, laws and rules of behavior. I still take part in social activities as long as it doesn't interfere with my work as social care department.",
+        "languages": "Tigrinya, Amharic, English, Hebrew, Russian (reading and writing)"
       },
-      "credentials": [
+      "education": [
         {
-          "title": "Credential 1",
-          "description": "This is the second credential",
-          "url": "https://www.google.com",
-          "id": "25d31ed0-af4d-4e22-bd9a-1b3930158cb8"
+          "desc": "Teacher training course in 'Horaa' in Desse, Ethiopia"
         },
         {
-          "title": "Credential 2",
-          "description": "This is the second credential",
-          "url": "https://www.google.com",
-          "id": "0b6c5b9e-e00f-41a3-88e9-63be33f24d24"
+          "desc": "Political (State) sceince academic course in Sophia, Bulgaria"
+        },
+        {
+          "desc": "B.A in social work, M.A in organizational counseling and development."
         }
       ],
-      "work": [
+      "certifications": [
         {
-          "title": "work 1",
-          "description": "This is the first work",
-          "url": "https://www.google.com",
-          "id": "e9dd6088-3d13-4fa3-ba6b-af71168fba36"
+          "timePeriod": "07/1992 - 06/1993",
+          "desc": " Young leadership for new residents in Jerusalem and Tel-Aviv"
         },
         {
-          "title": "work 2",
-          "description": "This is the second work",
-          "url": "https://www.google.com",
-          "id": "db58b46e-c704-4a48-bcc9-8453ad1a6c73"
+          "timePeriod": "10/1993 - 06/1994",
+          "desc": "Guides for parents, family and community training"
+        },
+        {
+          "timePeriod": "02 - 06/2000",
+          "desc": "Group guiding - Bar Ilan University"
+        },
+        {
+          "timePeriod": "10/2002 - 06/2003",
+          "desc": "Policy, child's rights and parental responsibility - Child Saftey council and Herzog center"
+        },
+        {
+          "timePeriod": "13-15/08/2006",
+          "desc": "Guides training for community strength - Mashabim and the Jewish Agency"
+        },
+        {
+          "timePeriod": "",
+          "desc": ""
+        },
+        {
+          "timePeriod": "",
+          "desc": ""
+        },
+        {
+          "timePeriod": "",
+          "desc": ""
         }
-      ]
+      ],
+      "workExp": [],
+      "socialWork": []
     }
   }
 ]

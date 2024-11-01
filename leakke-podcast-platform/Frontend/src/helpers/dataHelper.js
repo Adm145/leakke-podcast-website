@@ -1,48 +1,20 @@
-import { api } from 'Api'
+import {api} from '../api/api'
 
-export const usersApi = {
+export const dataApi = {
 
-  get: async () => {
-    return api.send('get', '/users')
+  get: async (lng) => {
+    return api.send('get', `/${lng}`, null, lng)
   },
 
-  getUser: async () => {
-    return api.send('get', `/users/user`)
+  add: async (lng, payload) => {
+    return api.send('post', `/${lng}`, payload)
   },
 
-  getUserById: async (itemId) => {
-    return api.send('get', `/users/${itemId}`)
+  update: async (lng, payload) => {
+    return api.send('put', `/${lng}`, payload)
   },
 
-  add: async (payload) => {
-    return api.send('post', '/users', payload)
-  },
-
-  remove: async (itemId) => {
-    return api.send('delete', `/users/${itemId}`)
-  },
-
-  login: async (payload) => {
-    return api.send('post', '/auth/login', payload)
-  },
-
-  updateUser: async (itemId, payload) => {
-    return api.send('put', `/auth/profile/update/${itemId}`, payload)
-  },
-
-  savePet: async (itemId, payload) => {
-    return api.send('put', `/users/pet/${itemId}/save`, payload)
-  },
-
-  fosterPet: async (itemId, payload) => {
-    return api.send('put', `/users/pet/${itemId}/foster`, payload)
-  },
-
-  adoptPet: async (itemId, payload) => {
-    return api.send('put', `/users/pet/${itemId}/adopt`, payload)
-  },
-
-  returnPet: async (itemId, payload) => {
-    return api.send('put', `/users/pet/${itemId}/return`, payload)
-  },
+  remove: async (lng, payload) => {
+    return api.send('delete', `/${lng}`, payload)
+  }
 }
