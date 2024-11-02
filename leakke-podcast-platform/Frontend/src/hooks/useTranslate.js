@@ -8,9 +8,9 @@ const useTranslate = () => {
   const {currLang, setCurrLang, handleGetData} = useContext(dataContext);
 
   useEffect(() => {
-    i18n.changeLanguage(currLang)
+    i18n.changeLanguage(currLang);
+    document.documentElement.setAttribute('dir', currLang === 'he' ? 'rtl' : 'ltr');
     handleGetData(currLang);
-    console.log({currLang})
   }, [currLang])
 
   const handleLanguageChange = (lang) => {

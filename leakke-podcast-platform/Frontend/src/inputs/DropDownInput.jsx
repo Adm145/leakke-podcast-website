@@ -7,7 +7,7 @@ import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 const DropDownInput = ({options, onSelect, lable}) => {
   const [selectedOption, setSelectedOption] = React.useState(lable);
 
-  const handleoptionClicked = (popupState, option) => {
+  const handleOptionClicked = (popupState, option) => {
     setSelectedOption(option.label)
     onSelect(option.value)
     popupState.close();
@@ -20,7 +20,7 @@ const DropDownInput = ({options, onSelect, lable}) => {
           <Button 
           variant="text" 
           {...bindTrigger(popupState)}
-          sx={{size: 'medium'}}
+          sx={{color: 'white'}}
           >
             {selectedOption}
           </Button>
@@ -28,7 +28,7 @@ const DropDownInput = ({options, onSelect, lable}) => {
             {options.map((option) => (
               <MenuItem
                 key={option.value}
-                onClick={() => handleoptionClicked(popupState, option)}
+                onClick={() => handleOptionClicked(popupState, option)}
               >
                 {option.label}
               </MenuItem>

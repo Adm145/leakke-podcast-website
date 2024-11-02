@@ -5,12 +5,19 @@ import podcastLogo from '../../assets/logos/podcast_logo.jpg'
 
 
 const Header = () => {
+    
+  const headerLogoStyle = {
+    height: '10rem',
+    mixBlendMode: 'multiply',
+    borderRadius: '50%'
+  }
+
   return (
-    <div className="border container-fluid d-flex align-items-center flex-column px-0">
+    <header className="container-fluid d-flex align-items-center flex-column px-0" style={{backgroundColor: 'var(--beige)'}}>
       <HeaderLinks />
-      <img src={podcastLogo} alt="Podcast Logo" className="headerLogo" />
+      <img src={podcastLogo} alt="Podcast Logo" style={headerLogoStyle} />
       <NavMenu />
-    </div>
+    </header>
   )
 }
 export default Header

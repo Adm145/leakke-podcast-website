@@ -1,23 +1,27 @@
 import './NavMenu.css'
 import {useTranslation} from "react-i18next"
+import { useNavigate } from "react-router-dom";
+
 
 const NavMenu = () => {
+  
+  const navigate = useNavigate()
   const [t] = useTranslation("translation")
 
   const navBarItems = [
-    t("home"),
-    t("about"),
-    t("contact")
+    {label: t("home"), link: "/", key: "home"},
+    {label: t("about"), link: "/about", key: "about"},
+    {label: t("contact"), link: "/contact", key: "contact"}
   ]
 
   return (
-    <div className="container-fluid d-flex flex-row justify-content-center gap-5 pb-5 pt-2">
+    <nav className="container-fluid d-flex flex-row justify-content-center gap-4 pb-3">
       {navBarItems.map((item) => (
-            <button className="navMenuItem" key={item}>
-              {item}
+            <button className="headerNavMenuItem" key={item.key} onClick={() => navigate(item.link)}>
+              {item.label}
             </button>
       ))}
-    </div>
+    </nav>
   )
 }
 export default NavMenu

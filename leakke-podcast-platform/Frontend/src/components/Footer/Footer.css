@@ -1,0 +1,14 @@
+.footerNavMenuItem {
+  border: none;
+  border-bottom: 1px solid var(--beige);
+  background-color: transparent;
+  color: var(--brown-light);
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+
+
+.footerNavMenuItem:hover {
+  color: var(--brown-dark);
+  border-bottom: 1px solid var(--brown-dark);
+}

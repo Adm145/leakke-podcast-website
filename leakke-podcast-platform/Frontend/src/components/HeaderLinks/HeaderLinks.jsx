@@ -1,19 +1,19 @@
 import './HeaderLinks.css'
 import LanguageChangeButton from '../LanguageChangeButton/LanguageChangeButton'
-import { socialLinks } from '../../utils/socialLinks'
+import { socialLinksWhite } from '../../utils/socialLinks'
 
 const HeaderLinks = () => {
   return (
-    <div className="container-fluid d-flex flex-row justify-content-between align-items-center pt-2">
+    <section className="container-fluid d-flex flex-row justify-content-between align-items-center py-2" style={{backgroundColor: 'var(--black)'}}>
       <LanguageChangeButton />
       <div className="d-flex flex-row justify-content-end gap-2">
-        {socialLinks.map((item) => (
+        {socialLinksWhite.map((item) => (
           <a href={item.link} key={item.name} target="_blank" rel="noopener noreferrer">
             <img src={item.logo} alt={item.name} className="headerLinkItem" />
           </a>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 export default HeaderLinks

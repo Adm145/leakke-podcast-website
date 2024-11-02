@@ -24,17 +24,13 @@ export const DataProvider = ({children}) => {
       setCertifications(res.certifications);
       setWorkExp(res.workExp);
       setSocialWork(res.socialWork);
-      console.log(res)
+      console.log(res);
     } catch (err) {
       console.log(err.response.data)
     } finally {
       setLoading(false);
     }
   }
-
-  // useEffect(() => {
-  //   handleGetData()
-  // }, [])
 
   const handleAddData = () => {
     dataApi.add(currLang)
