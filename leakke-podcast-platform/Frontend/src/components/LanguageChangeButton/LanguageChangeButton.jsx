@@ -1,5 +1,5 @@
 import {useTranslation} from 'react-i18next';
-import DropDownInput from '../../inputs/DropDownInput';
+import DropDownInput from '../../uikit/DropDownInput';
 import useTranslate from '../../hooks/useTranslate';
 import {languages} from '../../utils/languages';
 

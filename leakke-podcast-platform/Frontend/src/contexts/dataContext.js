@@ -1,5 +1,5 @@
 import {createContext, useState, useEffect} from "react";
-import {dataApi} from '../helpers/dataHelper';
+import {dataApi, youtubeDataApi} from '../helpers/dataHelper';
 
 export const dataContext = createContext({});
 
@@ -14,6 +14,11 @@ export const DataProvider = ({children}) => {
   const [images, setImages] = useState([])
   const [loading, setLoading] = useState(false)
   const [currLang, setCurrLang] = useState('he')
+  const [episodesList, setEpisodesList] = useState([])
+
+  useEffect(() => {
+    handleGetEpisodesData();
+  }, [])
 
   const handleGetData = async () => {
     setLoading(true);
@@ -24,7 +29,6 @@ export const DataProvider = ({children}) => {
       setCertifications(res.certifications);
       setWorkExp(res.workExp);
       setSocialWork(res.socialWork);
-      console.log(res);
     } catch (err) {
       console.log(err.response.data)
     } finally {
@@ -56,6 +60,15 @@ export const DataProvider = ({children}) => {
       })
   }
 
+  const handleGetEpisodesData = async () => {
+    try {
+      const res = await youtubeDataApi.get()
+      setEpisodesList(res.items)
+    } catch (err) {
+      console.log(err.response.data)
+    }
+  }
+
 
   const value = {
     //states
@@ -67,6 +80,7 @@ export const DataProvider = ({children}) => {
     currLang, setCurrLang,
     loading, setLoading,
     images, setImages,
+    episodesList,
 
     //functions
     handleGetData,

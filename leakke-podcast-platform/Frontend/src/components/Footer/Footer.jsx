@@ -3,11 +3,13 @@ import podcastLogo from '../../assets/logos/podcast_logo.jpg'
 import { useTranslation } from 'react-i18next'
 import { socialLinksBlack } from '../../utils/socialLinks'
 import { useNavigate } from "react-router-dom";
+import useDirection from '../../utils/direction';
+
 
 const Footer = () => {
-  
   const navigate = useNavigate()
   const {t} = useTranslation('translation')
+  const direction = useDirection()
 
   const footerLogoStyle = {
     height: '10rem',
@@ -23,7 +25,7 @@ const Footer = () => {
 
   return (
     <footer className='container-fluid d-flex flex-row align-items-center justify-content-between' 
-    style={{backgroundColor: 'var(--beige)', height: '12rem',padding: '5rem 30rem' , marginTop: '150px'}}>
+    style={{backgroundColor: 'var(--beige)', height: '10rem',padding: '5rem 30rem' }}>
 
       <section>
         <img src={podcastLogo} alt ="Podcast Logo" style={footerLogoStyle}/> 
@@ -33,7 +35,7 @@ const Footer = () => {
       <div className="h-100 py-5" style={{border: '1px var(--brown-light) solid'}}></div>
 
       <section className="ps-5 d-flex flex-row align-items-center gap-3">
-        <nav className="d-flex flex-column gap-2 align-items-start" >
+        <nav dir={direction} className="d-flex flex-column gap-2 align-items-start" >
           <h3 style={{color: 'var(--brown-light)'}}>
             {t('help')}
           </h3>

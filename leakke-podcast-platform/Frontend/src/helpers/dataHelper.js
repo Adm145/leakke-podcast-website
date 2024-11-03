@@ -1,4 +1,4 @@
-import {api} from '../api/api'
+import {api, youtubeApi} from '../api/api'
 
 export const dataApi = {
 
@@ -16,5 +16,11 @@ export const dataApi = {
 
   remove: async (lng, payload) => {
     return api.send('delete', `/${lng}`, payload)
+  }
+}
+
+export const youtubeDataApi = {
+  get: async () => {
+    return youtubeApi.send()
   }
 }

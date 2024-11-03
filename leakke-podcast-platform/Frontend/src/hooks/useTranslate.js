@@ -9,7 +9,7 @@ const useTranslate = () => {
 
   useEffect(() => {
     i18n.changeLanguage(currLang);
-    document.documentElement.setAttribute('dir', currLang === 'he' ? 'rtl' : 'ltr');
+    // document.documentElement.setAttribute('dir', currLang === 'he' ? 'rtl' : 'ltr');
     handleGetData(currLang);
   }, [currLang])
 

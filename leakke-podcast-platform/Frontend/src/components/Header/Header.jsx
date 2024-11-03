@@ -13,7 +13,7 @@ const Header = () => {
   }
 
   return (
-    <header className="container-fluid d-flex align-items-center flex-column px-0" style={{backgroundColor: 'var(--beige)'}}>
+    <header className="container-fluid d-flex align-items-center flex-column px-0" style={{ height: '20%'}}>
       <HeaderLinks />
       <img src={podcastLogo} alt="Podcast Logo" style={headerLogoStyle} />
       <NavMenu />
