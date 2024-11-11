@@ -6,18 +6,23 @@ export const dataContext = createContext({});
 const Provider = dataContext.Provider;
 
 export const DataProvider = ({children}) => {
-  const [bio, setBio] = useState({})
+  const [bio, setBio] = useState([])
   const [education, setEducation] = useState([])
-  const [certifications, setCertifications] = useState([])
+  const [courses, setCourses] = useState([])
   const [workExp, setWorkExp] = useState([])
   const [socialWork, setSocialWork] = useState([])
+  const [publicActivity, setPublicActivity] = useState([])
+
   const [images, setImages] = useState([])
+
   const [loading, setLoading] = useState(false)
   const [currLang, setCurrLang] = useState('he')
+
   const [episodesList, setEpisodesList] = useState([])
 
   useEffect(() => {
     handleGetEpisodesData();
+    return;
   }, [])
 
   const handleGetData = async () => {
@@ -26,9 +31,10 @@ export const DataProvider = ({children}) => {
       const res = await dataApi.get(currLang)
       setBio(res.bio);
       setEducation(res.education);
-      setCertifications(res.certifications);
+      setCourses(res.courses);
       setWorkExp(res.workExp);
       setSocialWork(res.socialWork);
+      setPublicActivity(res.publicActivity);
     } catch (err) {
       console.log(err.response.data)
     } finally {
@@ -74,9 +80,10 @@ export const DataProvider = ({children}) => {
     //states
     bio, setBio,
     education, setEducation,
-    certifications, setCertifications,
+    courses, setCourses,
     workExp, setWorkExp,
     socialWork, setSocialWork,
+    publicActivity, setPublicActivity,
     currLang, setCurrLang,
     loading, setLoading,
     images, setImages,

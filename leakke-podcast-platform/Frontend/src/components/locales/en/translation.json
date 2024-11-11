@@ -18,5 +18,21 @@
   "aboutTab-Education": "Education",
   "aboutTab-Experience": "Experience",
 
-  "latestEpisodes": "Watch the Latest Episodes Here:"
+  "latestEpisodes": "Watch the Latest Episodes Here:",
+
+  "bio": "Personal Info",
+  "publicActivity": "Public Activity",
+  "work": "Work History",
+  "socialWork": "Social Work",
+  "education": "Degrees and Certificates",
+  "courses": "Courses",
+
+  "fullName": "Name",
+  "familyStatus": "Family Status",
+  "address": "Address",
+  "workNo": "Work Number",
+  "cellNo": "Personal Number",
+  "email": "Email",
+  "brief": "About Me",
+  "languages": "Languages"
 }

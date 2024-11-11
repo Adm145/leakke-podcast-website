@@ -4,9 +4,15 @@
   --gap-s: 10px;
   --gap-m: 15px;
   --gap: 20px;
-  --black: #272727;
-  --beige: #FFF0D1;
-  --brown-light: #795757;
-  --brown: #664343;
-  --brown-dark: #3B3030;
+
+  --black: rgb(39, 39, 39);
+  --beige: rgb(255, 240, 209);
+  --brown-light: rgb(121, 87, 87);
+  --brown: rgb(102, 67, 67);
+  --brown-dark: rgb(59, 48, 48);
+
+  --brown-light-fade: rgba(121, 87, 87, 0.5);
+  --beige-fade: rgba(255, 240, 209, 0.5);
+  --brown-fade: rgba(102, 67, 67, 0.5);
+  --brown-dark-fade: rgba(59, 48, 48, 0.5);
 }

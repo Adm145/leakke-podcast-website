@@ -3,3 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.App {
+  background-image: url("./assets/Images/bg-1.png");
+}

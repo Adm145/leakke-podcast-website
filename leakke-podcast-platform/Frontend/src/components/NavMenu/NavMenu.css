@@ -1,12 +1,19 @@
 .headerNavMenuItem {
   background-color: transparent;
   border: none;
-  border-bottom: gray 1px solid;
-  padding: 1rem;
-  transition: border-color 200ms ease-in-out, color 100ms ease-in-out;
+  border-bottom: 1px transparent solid;
+  padding: 1em 3.3em;
+  transform: perspective(200px) rotateX(15deg);
+  color: white;
+  will-change: transform;
+  transition: all 0.3s;
 }
 
 .headerNavMenuItem:hover {
-  border-color: white;
-  color: lightblue;
+  transform: perspective(180px) rotateX(30deg) translateY(2px);
+  border-bottom: 1px white solid;
+}
+
+.headerNavMenuItem:active {
+  transform: perspective(170px) rotateX(36deg) translateY(5px);
 }

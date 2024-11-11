@@ -15,9 +15,9 @@ const NavMenu = () => {
   ]
 
   return (
-    <nav className="container-fluid d-flex flex-row justify-content-center gap-4 pb-3">
+    <nav className="container-fluid d-flex justify-content-center gap-4 pb-3 mb" style={{backgroundColor: 'var(--black)'}}>
       {navBarItems.map((item) => (
-            <button className="headerNavMenuItem" key={item.key} onClick={() => navigate(item.link)}>
+            <button className="headerNavMenuItem py-2 px-3" key={item.key} onClick={() => navigate(item.link)}>
               {item.label}
             </button>
       ))}

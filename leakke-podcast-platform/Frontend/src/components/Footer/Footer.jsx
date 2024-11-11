@@ -24,14 +24,15 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='container-fluid d-flex flex-row align-items-center justify-content-between' 
-    style={{backgroundColor: 'var(--beige)', height: '10rem',padding: '5rem 30rem' }}>
+    <footer className="mt-5 mb-3">
 
+      <div className='container-fluid d-flex flex-row align-items-center justify-content-between' 
+      style={{height: '10rem',padding: '5rem 30rem' }}>
       <section>
         <img src={podcastLogo} alt ="Podcast Logo" style={footerLogoStyle}/> 
       </section>
 
-      {/* divider */}
+      {/* vertical divider */}
       <div className="h-100 py-5" style={{border: '1px var(--brown-light) solid'}}></div>
 
       <section className="ps-5 d-flex flex-row align-items-center gap-3">
@@ -58,6 +59,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      </div>
 
     </footer>
   )

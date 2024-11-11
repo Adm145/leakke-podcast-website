@@ -3,61 +3,232 @@
     "data": {
       "bio": {
         "fullName": "Leakeberhan Yitshak",
-        "familyStatus": "+3",
+        "familyStatus": "Father of 3",
         "address": "10/16 Hanoar Haoved Street, Ashkelon, zip code 78751",
         "workNo": "08-6748145",
         "cellNo": "050-2323013",
         "email": "lakebr11@gmail.com, izhak@ashkelon.muni.il",
         "brief": "in Ethiopia I was a teacher and an education inspector. Along with my government job I was a social leader and activist, in all life aspects. I worked with all different levels of society in 'Shire' at Tigray regional government. I hosted private people and groups, as well as social and international functions. In Israel i taught for the first two years, I counseled and guided droups about different topics such as relocation, education, health, culture, laws and rules of behavior. I still take part in social activities as long as it doesn't interfere with my work as social care department.",
-        "languages": "Tigrinya, Amharic, English, Hebrew, Russian (reading and writing)"
-      },
+        "languages": "English, Hebrew, Tigrinya, Amharic, Russian (reading and writing)"
+      },     
       "education": [
         {
-          "desc": "Teacher training course in 'Horaa' in Desse, Ethiopia"
+          "timePeriod": "",
+          "desc": "Teacher training course in 'Horaa' in Desse, Ethiopia.",
+          "id": "e76692b5-1399-4318-8506-d655f093ef7e"
         },
         {
-          "desc": "Political (State) sceince academic course in Sophia, Bulgaria"
+          "timePeriod": "",
+          "desc": "Political (State) sceince academic course in Sophia, Bulgaria.",
+          "id": "9b074110-cb59-4823-8b60-7aed9c8eed96"
         },
         {
-          "desc": "B.A in social work, M.A in organizational counseling and development."
+          "timePeriod": "",
+          "desc": "B.A in social work, M.A in organizational counseling and development.",
+          "id": "20dbf651-7ff7-4c55-bc57-c4d32beab166"
         }
       ],
-      "certifications": [
+      "courses": [
         {
           "timePeriod": "07/1992 - 06/1993",
-          "desc": " Young leadership for new residents in Jerusalem and Tel-Aviv"
+          "desc": " Young leadership for new residents in Jerusalem and Tel-Aviv.",
+          "id": "536386da-657a-43b4-8adb-30bbf7645b59"
         },
         {
           "timePeriod": "10/1993 - 06/1994",
-          "desc": "Guides for parents, family and community training"
+          "desc": "Guides for parents, family and community training.",
+          "id": "8c00f5c1-50a3-4800-96ad-fd19f377831e"
         },
         {
           "timePeriod": "02 - 06/2000",
-          "desc": "Group guiding - Bar Ilan University"
+          "desc": "Group guiding - Bar Ilan University.",
+          "id": "9723e284-76dc-4cfb-ab46-f3f8fb61ba25"
         },
         {
           "timePeriod": "10/2002 - 06/2003",
-          "desc": "Policy, child's rights and parental responsibility - Child Saftey council and Herzog center"
+          "desc": "Policy, child's rights and parental responsibility - Child Saftey council and Herzog center.",
+          "id": "c0a9f410-8fd3-41a7-b16a-f3c32eca9227"
         },
         {
-          "timePeriod": "13-15/08/2006",
-          "desc": "Guides training for community strength - Mashabim and the Jewish Agency"
+          "timePeriod": "13 - 15/08/2006",
+          "desc": "Guides training for community strength - Mashabim and the Jewish Agency.",
+          "id": "9fe1cdc7-7d7c-4cb4-99c8-85c7f8e954ac"
         },
         {
-          "timePeriod": "",
-          "desc": ""
+          "timePeriod": "12/2006 - 06/2007",
+          "desc": "Trauma treatment. Central School for social workers - Tel Aviv Branch.",
+          "id": "390368c8-b0a5-4610-8c7d-1f0cf83595b5"
         },
         {
-          "timePeriod": "",
-          "desc": ""
+          "timePeriod": "01 - 03/2008",
+          "desc": "Abridgment - Bar Ilan University and Gevim Center.",
+          "id": "e6599a1a-e4dd-4dc4-ad11-f33762944408"
         },
         {
-          "timePeriod": "",
-          "desc": ""
+          "timePeriod": "06 - 08/2008",
+          "desc": "Municipal Leadership Development - Uno College.",
+          "id": "74be0e6d-225d-462a-a068-09f2ff24443c"
+        },
+        {
+          "timePeriod": "11/07 - 04/08",
+          "desc": "Dealing with crisis situations - Central School for social workers - Tel Aviv.",
+          "id": "0c7ae6f9-b98e-40ef-9d38-58493bfaf7ea"
+        },
+        {
+          "timePeriod": "08/09 - 02/09",
+          "desc": "Support for car accident casualties - Central School for social workers - Tel Aviv.",
+          "id": "660e987a-e33a-4788-a62f-0010dfdff13f"
+        },
+        {
+          "timePeriod": "01 - 06/2009",
+          "desc": "Basic coaching - Bar Ilan University Social Work Association.",
+          "id": "b64fcae8-ad11-476b-8803-050388242163"
+        },
+        {
+          "timePeriod": "11/09 - 02/10",
+          "desc": "Dealing with cultural differences - Central School for social workers - Tel Aviv.",
+          "id": "8b0c213e-02d1-4ce1-a398-a0af694e24d4"
+        },
+        {
+          "timePeriod": "05 - 06/2010",
+          "desc": "Hosen groups hosts - The Center for Psychotrauma Treatment.",
+          "id": "89f5b4aa-53c4-4223-bc2d-9032b6a26da0"
+        },
+        {
+          "timePeriod": "09/2009 - 08/2010",
+          "desc": "Business counciling. Mati Netanya.",
+          "id": "f27a4114-95e8-4b49-8ff1-d8d41e005238"
+        },
+        {
+          "timePeriod": "2009 - 2010",
+          "desc": "Group guiding - Sapir College.",
+          "id": "46f11e29-f711-4562-81d9-7a33bda7ec2a"
+        },
+        {
+          "timePeriod": "01 - 05/2011",
+          "desc": "Handicap treatment management - Ashlim.",
+          "id": "6cd35b48-6141-47ad-a444-60f680dc34a7"
+        },
+        {
+          "timePeriod": "08 - 09/2011",
+          "desc": "Training in the USA - a delegation of social workers.",
+          "id": "b09c6c1e-aa09-4387-9b66-ed82d60efe45"
+        },
+        {
+          "timePeriod": "11/2011 - 06/2012",
+          "desc": "Guidance course. Ashkelon College.",
+          "id": "16a87fbf-c886-49f1-9e81-4a406d39e41c"
+        },
+        {
+          "timePeriod": "03/2013 - 01/2014",
+          "desc": "Family interference management - Central School for social workers - Tel Aviv.",
+          "id": "e19857ac-40de-4d24-8208-76439c63ab52"
+        },
+        {
+          "timePeriod": "05 - 09/2014",
+          "desc": "Rehabilitation course -  Central School for social workers - Tel Aviv.",
+          "id": "16daaae7-02f8-498d-a29b-3f3cff7e4be3"
         }
       ],
-      "workExp": [],
-      "socialWork": []
+      "workExp": [
+        {
+          "timePeriod": "10/1991 - 06/1993",
+          "desc": "English teacher in Amit school Ashkelon.",
+          "id": "ff82cc14-9680-41e4-98f4-a20971bc98a2"
+        },
+        {
+          "timePeriod": "1994",
+          "desc": "Educational activity instructor in Or Hahaim school Ashkelon.",
+          "id": "dc5b1507-0ff1-497e-aeab-dbcaaf96e769"
+        },
+        {
+          "timePeriod": "01/1993 - 02/1995",
+          "desc": "Community worker in the social department Ashkelon.",
+          "id": "ba6e9a2b-ef29-4096-902d-bc5a7b651308"
+        },
+        {
+          "timePeriod": "01/1995 - 12/1997",
+          "desc": "Public health worker in different cities.",
+          "id": "5e7b3493-7f2f-490c-b55b-186fb8425d45"
+        },
+        {
+          "timePeriod": "07 - 08/1999",
+          "desc": "Activity guider in the Goldenberg community center",
+          "id": "fefabfc3-f2c1-4cdb-bdb4-f0c87feb5e9f"
+        },
+        {
+          "timePeriod": "10/1997 - 06/1998",
+          "desc": "Guide for Ethiopian students- Ashkelon College.",
+          "id": "34e4ce80-dc3c-4715-a44b-65e6ce95ce53"
+        },
+        {
+          "timePeriod": "05/97",
+          "desc": "Host in the Israeli - Ethiopian channel IETV. A columnist in Yediot net",
+          "id": "2bffd7ad-d979-4861-b262-6f3eba79b3bf"
+        },
+        {
+          "timePeriod": "12/1998",
+          "desc": "Direct treatment with families, groups and individuals",
+          "id": "b23d9925-dea9-40be-9fd5-021e5a1cfcdc"
+        },
+        {
+          "timePeriod": "2010",
+          "desc": "In charge of rehabilitation department in the social department.",
+          "id": "cb767af2-8564-4ef6-a05c-3b4881480c05"
+        },
+        {
+          "timePeriod": "",
+          "desc": "Language (Amharinya and English) Social Studies teacher.",
+          "id": "8124d3de-6f05-44d3-b903-86be8875b8fc"
+        },
+        {
+          "timePeriod": "",
+          "desc": "Education Inspector in the Shire-Tigray region.",
+          "id": "94f18bf4-63cb-4c46-9d38-2e4e5c26bac5"
+        },
+        {
+          "timePeriod": "",
+          "desc": "Teacher and a guide to Ethiopian Jew for the Israeli council in Ethiopia.",
+          "id": "65a34939-0d24-44f4-ab46-6c429f29b469"
+        },
+        {
+          "timePeriod": "",
+          "desc": "In charge of diffeerent arrangments in an out of the community, employment for the citizens, training and placement for the employees. Guided of Social Work students",
+          "id": "e007f9f9-ee86-48ca-97bf-860b0fc9cb1d"
+        },
+        {
+          "timePeriod": "",
+          "desc": "In the past few years i have been a member of the team informing families about emergency casualties",
+          "id": "4f7416ac-ef03-4ac4-8dd4-f8cec83b5a4b"
+        }
+      ],
+      "socialWork": [
+        {
+          "timePeriod": "1995 - 1996",
+          "desc": "Oncology institute Barzilai hospital Ashkelon",
+          "id": "88739292-e629-4121-8271-912238e73e76"
+        },
+        {
+          "timePeriod": "1996 - 1997",
+          "desc": "In the center for preventing and treatig family violence",
+          "id": "56594152-4bfb-437e-9485-7b8225b0a417"
+        },
+        {
+          "timePeriod": "1997 - 1998",
+          "desc": "Social work department in Ashkelon",
+          "id": "71af0d78-d7f0-4483-b223-6e1f1b42ab3e"
+        }
+      ],
+      "publicActivity": [
+        {
+          "desc": "Director of a youth movement and some young people. Secretary for the teacher organization. Representative of community in city hall. Editor of the local newspaper. Host and guide of groups, meetings ' events and both national and international ceremonies",
+          "id": "ca7c1677-12cf-4b35-bd88-59582bf5f1c4"
+        },
+        {
+          "desc": "Was chosen as a member of a national committee in the topic of education and culture for the Ethiopian people. Also worked as a substitute for the chairman of the Ethiopian community association in Ashkelon. Worked as a member of the Ethiopian Jewish Center, was a member of the students leadership. For several years I was a volunteer in the Ashkelon Police. I participate in the forum of Ethiopian social workers. A member of Tabaka a legal ait center and a community defender for Ethiopians",
+          "id": "64ab4a76-4ba5-4c16-9ea5-e111b246f50e"
+        }
+      ]
     }
   }
 ]
