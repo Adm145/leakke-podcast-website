@@ -11,7 +11,7 @@ const useTranslate = () => {
     i18n.changeLanguage(currLang);
     // document.documentElement.setAttribute('dir', currLang === 'he' ? 'rtl' : 'ltr');
     handleGetData(currLang);
-  }, [currLang])
+  }, [currLang, i18n, handleGetData]);
 
   const handleLanguageChange = (lang) => {
     setCurrLang(lang);

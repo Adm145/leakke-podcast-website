@@ -1,5 +1,5 @@
 import './AboutPage.css'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslation } from "react-i18next"
 import Bio from './Bio/Bio';
 import Education from './Education/Education';
