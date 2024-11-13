@@ -1,6 +1,5 @@
 import './Header.css'
 import LanguageChangeButton from '../LanguageChangeButton/LanguageChangeButton'
-import { socialLinksWhite } from '../../utils/socialLinks'
 import podcastLogo from '../../assets/logos/podcast_logo.png'
 import {useTranslation} from "react-i18next"
 import { useNavigate } from "react-router-dom";

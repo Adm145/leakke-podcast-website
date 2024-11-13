@@ -10,11 +10,6 @@ const Footer = () => {
   const {t} = useTranslation('translation')
   const direction = useDirection()
 
-  const footerLogoStyle = {
-    height: '10rem',
-    mixBlendMode: 'multiply',
-    borderRadius: '50%'
-  }
 
   const navBarItems = [
     {label: t("home"), link: "/", key: "home"},
@@ -28,7 +23,6 @@ const Footer = () => {
       <div className='container-fluid d-flex flex-row align-items-center justify-content-between' 
       style={{height: '10rem',padding: '5rem 30rem' }}>
       <section>
-        {/* <img src={podcastLogo} alt ="Podcast Logo" style={footerLogoStyle}/>  */}
       </section>
 
       {/* vertical divider */}
