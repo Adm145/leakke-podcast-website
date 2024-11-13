@@ -20,7 +20,7 @@ const DropDownInput = ({options, onSelect, lable}) => {
           <Button 
           variant="text" 
           {...bindTrigger(popupState)}
-          sx={{color: 'white'}}
+          sx={{color: 'var(--light-gray)'}}
           >
             {selectedOption}
           </Button>

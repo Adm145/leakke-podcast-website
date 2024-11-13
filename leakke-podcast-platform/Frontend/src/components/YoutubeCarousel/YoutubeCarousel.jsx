@@ -15,7 +15,6 @@ const YoutubeCarousel = () => {
     left: "0",
     bottom: "0",
     height: "20%",
-    color: 'var(--beige)'
   };
 
   return (

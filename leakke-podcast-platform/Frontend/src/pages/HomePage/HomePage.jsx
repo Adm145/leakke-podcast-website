@@ -1,12 +1,10 @@
 import './HomePage.css'
-import HomePageTop from '../../components/HomePageTop/HomePageTop'
-import Intro from '../../components/Intro/Intro'
+import Intro from './Intro/Intro'
 
 const HomePage = () => {
   return (
     <main className="container-fluid mx-0 px-0">
       <Intro />
-      <HomePageTop />
     </main>
   )
 }

@@ -1,0 +1,17 @@
+.headerLinkItem {
+  height: 1.6rem;
+  border-radius: 25%;
+}
+
+.headerNavMenuItem {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px transparent solid;
+  /* padding: 0 2em; */
+  color: white;
+  transition: all 0.3s;
+}
+
+.headerNavMenuItem:hover {
+  border-bottom: 1px var(--light-gray) solid;
+}

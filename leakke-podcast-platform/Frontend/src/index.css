@@ -5,14 +5,14 @@
   --gap-m: 15px;
   --gap: 20px;
 
-  --black: rgb(39, 39, 39);
-  --beige: rgb(255, 240, 209);
-  --brown-light: rgb(121, 87, 87);
-  --brown: rgb(102, 67, 67);
-  --brown-dark: rgb(59, 48, 48);
+  --black: #272727;
+  --white: #fffffe;
 
-  --brown-light-fade: rgba(121, 87, 87, 0.5);
-  --beige-fade: rgba(255, 240, 209, 0.5);
-  --brown-fade: rgba(102, 67, 67, 0.5);
-  --brown-dark-fade: rgba(59, 48, 48, 0.5);
+  --beige: #f6eddd;
+  --brown: #7e4822;
+
+  --light-gray: #8e877d;
+  --gray: #5c5b55;
+  --dark-gray: #463c32;
+
 }

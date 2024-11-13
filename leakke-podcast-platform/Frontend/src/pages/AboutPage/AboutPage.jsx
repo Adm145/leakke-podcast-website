@@ -25,11 +25,10 @@ const AboutPage = () => {
     <main  
     dir={direction} 
     className="d-flex flex-row gap-5 p-3 w-auto rounded-3"
-    style={{backgroundColor: 'var(--brown-light-fade'}}
     >
       <section 
       className="d-flex flex-column align-items-start p-2 rounded-3"
-      style={{backgroundColor: 'var(--beige)', height: '120px'}}
+      style={{height: '120px'}}
       >
         {tabButtons.map((item) => (
           <button
@@ -46,7 +45,6 @@ const AboutPage = () => {
 
       <section
       className="w-auto rounded-3 px-3 py-1"
-      style={{backgroundColor: 'var(--beige'}}
       >
         {tab === 'bio' && <Bio />}
         {tab === 'work' && <Work />}

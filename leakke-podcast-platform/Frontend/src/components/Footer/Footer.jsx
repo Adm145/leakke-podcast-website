@@ -1,5 +1,4 @@
 import './Footer.css'
-import podcastLogo from '../../assets/logos/podcast_logo.jpg'
 import { useTranslation } from 'react-i18next'
 import { socialLinksBlack } from '../../utils/socialLinks'
 import { useNavigate } from "react-router-dom";
@@ -29,15 +28,15 @@ const Footer = () => {
       <div className='container-fluid d-flex flex-row align-items-center justify-content-between' 
       style={{height: '10rem',padding: '5rem 30rem' }}>
       <section>
-        <img src={podcastLogo} alt ="Podcast Logo" style={footerLogoStyle}/> 
+        {/* <img src={podcastLogo} alt ="Podcast Logo" style={footerLogoStyle}/>  */}
       </section>
 
       {/* vertical divider */}
-      <div className="h-100 py-5" style={{border: '1px var(--brown-light) solid'}}></div>
+      <div className="h-100 py-5"></div>
 
       <section className="ps-5 d-flex flex-row align-items-center gap-3">
         <nav dir={direction} className="d-flex flex-column gap-2 align-items-start" >
-          <h3 style={{color: 'var(--brown-light)'}}>
+          <h3>
             {t('help')}
           </h3>
           {navBarItems.map((item) => (
@@ -47,7 +46,7 @@ const Footer = () => {
       ))}
         </nav>
         <div className="d-flex flex-column justify-content-center align-items-center px-4 ms-5">
-          <h4 style={{color: 'var(--brown-light)'}}>
+          <h4>
             {t('followMe')}
           </h4>
           <div className="d-flex flex-row align-items-center pt-3 gap-3">
