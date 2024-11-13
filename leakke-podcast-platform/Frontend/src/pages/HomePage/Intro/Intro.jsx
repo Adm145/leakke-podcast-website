@@ -10,7 +10,7 @@ const Intro = () => {
     style={{height: '100vh', backgroundColor: 'var(--beige)'}}>
 
       <section className="d-flex">
-        <img src={selfImage1} />
+        <img src={selfImage1} alt="Description"/>
       </section>
 
       <section className="d-flex justify-content-center align-items-center w-50 mx-auto flex-column gap-3">
