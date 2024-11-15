@@ -1,0 +1,28 @@
+.podExperienceContainerItem {
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.podExperienceImageItem {
+  width: 450px;
+  height: 300px;
+  border-radius: 8%;
+  object-fit: cover;
+  object-position: 0% 25%;
+  margin-bottom: 2rem;
+}
+
+.podExperienceTitleItem {
+  font-family: var(--glass-antiqua);
+}
+
+.podExperienceDescItem {
+  color: var(--light-gray);
+  width: 400px;
+  text-align: center;
+}

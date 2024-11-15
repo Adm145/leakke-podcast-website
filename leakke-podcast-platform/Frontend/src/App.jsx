@@ -13,16 +13,14 @@ function App() {
 
       <Header />
       
-      <div className='flex-grow-1'>
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/about/*' element={<AboutPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-        </Routes>
-      </div>
-
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/about/*' element={<AboutPage />} />
+        <Route path='/contact' element={<ContactPage />} />
+      </Routes>
 
       <Footer />
+
       <ShamelessPlug />
 
     </div>

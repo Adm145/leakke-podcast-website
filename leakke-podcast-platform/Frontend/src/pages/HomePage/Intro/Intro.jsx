@@ -17,7 +17,7 @@ const Intro = () => {
 
         <h1 
         className=" w-75 font-weight-bold"
-        style={{fontSize: '80px'}}>
+        style={{fontSize: '80px', fontFamily: 'var(--glass-antiqua'}}>
           Exploring the Ethiopian Community in Israel
         </h1>
 

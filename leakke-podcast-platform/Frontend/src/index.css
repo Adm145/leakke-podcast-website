@@ -1,15 +1,13 @@
 :root {
-  --font-family: Roboto, Arial;
-  --gap-xs: 5px;
-  --gap-s: 10px;
-  --gap-m: 15px;
-  --gap: 20px;
+  --glass-antiqua: "Glass Antiqua", cursive;
 
   --black: #272727;
   --white: #fffffe;
 
-  --beige: #f6eddd;
+  --beige: #f8e5c4;
+  --light-beige: #fcf5eb;
   --brown: #7e4822;
+  --light-brown: #d19367;
 
   --light-gray: #8e877d;
   --gray: #5c5b55;

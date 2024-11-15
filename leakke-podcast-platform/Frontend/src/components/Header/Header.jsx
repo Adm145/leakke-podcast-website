@@ -17,7 +17,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="container-fluid d-flex align-items-center justify-content-between px-3" style={{ height: '15%', backgroundColor: 'var(--white)'}}>
+    <header className="container-fluid d-flex align-items-center justify-content-between px-3" style={{ height: '15%', backgroundColor: 'var(--light-beige)'}}>
 
       <div 
       className="d-flex flex-grow-4 align-items-center gap-3"
@@ -52,15 +52,6 @@ const Header = () => {
           </section>
           <LanguageChangeButton />
         </nav>
-
-
-        {/* <section className="d-flex flex-row justify-content-end gap-2">
-          {socialLinksWhite.map((item) => (
-            <a href={item.link} key={item.name} target="_blank" rel="noopener noreferrer">
-              <img src={item.logo} alt={item.name} className="headerLinkItem" />
-            </a>
-          ))}
-        </section> */}
 
     </header>
   )
