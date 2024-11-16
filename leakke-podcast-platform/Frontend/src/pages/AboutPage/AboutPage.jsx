@@ -1,55 +1,39 @@
-import './AboutPage.css'
-import { useState } from 'react';
+import "./AboutPage.css"
 import { useTranslation } from "react-i18next"
-import Bio from './Bio/Bio';
-import Education from './Education/Education';
-import Work from './Work/Work';
-import useDirection from '../../utils/direction'
+import useDirection from "../../utils/direction"
+import aboutSelfie from "../../assets/Images/studio_image.jpg"
 
 const AboutPage = () => {
   const direction = useDirection();
-  const { t } = useTranslation()
-  const [tab, setTab] = useState('bio')
-
-  const handleClick = (e) => {
-    setTab(e.target.value);
-  }
-
-  const tabButtons = [
-    {label: t("bio"), value: "bio"},
-    {label: t("work"), value: "work"},
-    {label: t("education"), value: "education"}
-  ]
+  const { t } = useTranslation();
 
   return (
-    <main  
-    dir={direction} 
-    className="d-flex flex-row gap-5 p-3 w-auto rounded-3"
-    >
-      <section 
-      className="d-flex flex-column align-items-start p-2 rounded-3"
-      style={{height: '120px'}}
-      >
-        {tabButtons.map((item) => (
-          <button
-          className="btn btn-outline-dark border-0 text-truncate"
-          style={{}}
-          key={item.value} 
-          value={item.value} 
-          onClick={(e) => {handleClick(e)}}
-          >
-            {item.label}
-          </button>
-        ))}
+    <main
+    className="border d-flex flex-column justify-content-center align-items-end"
+    style={{backgroundColor: 'var(--beige)'}}>
+
+      <section
+      className="aboutTopContainer">
+        <div className="aboutTopTextContainer">
+          <p >"I BELIEVE IN THE POWER OF CONVERSATION"</p>
+        </div>  
+
+        <div>
+          <img src={aboutSelfie} alt="selfie image" className="aboutSelfieImage" />
+        </div>
       </section>
 
       <section
-      className="w-auto rounded-3 px-3 py-1"
-      >
-        {tab === 'bio' && <Bio />}
-        {tab === 'work' && <Work />}
-        {tab === 'education' && <Education />}
+      // dir={direction}
+      className="aboutBottomContainer container-fluid px-5">
+        <p>
+          As a dedicated community member and a voice within the Ethiopian-Israeli comminuty, I have always been passionate about the power of conversation. I believe that through open and honest dialogue, we can create a more inclusive and understanding society. This is why I have created the Leakeberhan Podcast Platform, a space where we can come together to share our stories, experiences, and ideas. I hope that this platform will serve as a catalyst for change and inspire others to join the conversation. Together, we can build a brighter future for all members of our community.
+        </p>
+        <h3>
+          -"Through thoughtful conversation, I hope to uncover the resilience, wisdom and creativity that makes our community so unique."-
+        </h3>
       </section>
+
     </main>
   )
 }

@@ -14,7 +14,7 @@ const ShamelessPlug = () => {
       {t("creditText")}
       <b className="text-decoration-underline mx-1">{t("creditName")}</b>
        - {t("creditEmail")}
-      </section>
+    </section>
   )
 }
 export default ShamelessPlug

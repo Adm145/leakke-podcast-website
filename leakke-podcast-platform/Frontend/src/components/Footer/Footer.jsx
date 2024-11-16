@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer 
-    className="container-fluid d-flex flex-row align-items-center justify-content-between "
+    className="container-fluid d-flex flex-row align-items-center justify-content-between"
     style={{height: '13rem',padding: '5rem 30rem', backgroundColor: 'var(--light-beige)'}}>
       <section className="ps-5 d-flex flex-row align-items-center gap-5">
         <nav dir={direction} className="d-flex flex-column gap-2 align-items-start">

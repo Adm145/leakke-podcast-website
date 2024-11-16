@@ -19,9 +19,7 @@ const Header = () => {
   return (
     <header className="container-fluid d-flex align-items-center justify-content-between px-3" style={{ height: '15%', backgroundColor: 'var(--light-beige)'}}>
 
-      <div 
-      className="d-flex flex-grow-4 align-items-center gap-3"
-      >
+      <div className="d-flex flex-grow-4 align-items-center gap-3">
         <img 
         src={podcastLogo} 
         alt="podcast logo" 
@@ -38,20 +36,20 @@ const Header = () => {
       className="d-flex justify-content-between align-items-center gap-5 mb"
       style={{width: '40%'}}
       >
-          <section>
-            {navBarItems.map((item) => (
-              <button 
-              className="headerNavMenuItem mx-4 px-1" 
-              style={{color: 'var(--light-gray)'}}
-              key={item.key} 
-              onClick={() => navigate(item.link)}
-              >
-                {item.label}
-              </button>
-            ))}
-          </section>
-          <LanguageChangeButton />
-        </nav>
+         <section>
+           {navBarItems.map((item) => (
+            <button 
+            className="headerNavMenuItem mx-4 px-1" 
+            style={{color: 'var(--light-gray)'}}
+            key={item.key} 
+            onClick={() => navigate(item.link)}
+            >
+              {item.label}
+            </button>
+           ))}
+        </section>
+        <LanguageChangeButton />
+      </nav>
 
     </header>
   )

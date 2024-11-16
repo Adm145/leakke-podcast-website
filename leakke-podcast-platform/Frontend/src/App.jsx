@@ -9,7 +9,7 @@ import ShamelessPlug from './components/ShamelessPlug/ShamelessPlug';
 
 function App() {
   return (
-    <div className='App d-flex flex-column min-vh-100'>
+    <main className='App d-flex flex-column min-vh-100'>
 
       <Header />
       
@@ -23,7 +23,7 @@ function App() {
 
       <ShamelessPlug />
 
-    </div>
+    </main>
   );
 }
 

@@ -1,0 +1,47 @@
+.aboutTopContainer {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  margin: 3rem 0;
+  padding: 0 5rem;
+}
+
+.aboutTopTextContainer>p {
+  font-family: var(--bebas);
+  font-size: 5rem;
+  font-style: italic;
+  width: 60%;
+  text-wrap: wrap;
+  color: var(--brown);
+  -webkit-text-stroke-width: 2px;
+}
+
+.aboutSelfieImage {
+  height: 70vh;
+  border-radius: 2%;
+}
+
+.aboutBottomContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutBottomContainer>h3,
+.aboutBottomContainer>p {
+  width: 50%;
+  text-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.aboutBottomContainer>h3 {
+  color: var(--brown);
+  align-self: start;
+  font-style: italic;
+}
+
+.aboutBottomContainer>p {
+  color: var(--light-gray);
+  align-self: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

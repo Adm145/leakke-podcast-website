@@ -5,14 +5,7 @@ import bg from '../../../assets/Images/bg_1.webp'
 const CommunityVoices = () => {
   return (
     <section
-    className="d-flex flex-column justify-content-center align-items-center"
-    style={{
-      height: '100vh',
-      width: '100%',
-      backgroundImage: `url(${bg})`,
-      backgroundSize: '100% auto',
-      backgroundPosition: 'center', 
-      }}>
+    className="communityVoicesContainer d-flex flex-column justify-content-center align-items-center">
 
       <div 
       className="d-flex flex-column align-items-center mb-5"
