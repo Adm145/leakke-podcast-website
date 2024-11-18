@@ -1,4 +1,4 @@
-import {createContext, useState, useEffect} from "react";
+import {createContext, useState} from "react";
 import {dataApi, youtubeDataApi} from '../helpers/dataHelper';
 
 export const dataContext = createContext({});
@@ -66,14 +66,14 @@ export const DataProvider = ({children}) => {
       })
   }
 
-  const handleGetEpisodesData = async () => {
-    try {
-      const res = await youtubeDataApi.get()
-      setEpisodesList(res.items)
-    } catch (err) {
-      console.log(err.response.data)
-    }
-  }
+  // const handleGetEpisodesData = async () => {
+  //   try {
+  //     const res = await youtubeDataApi.get()
+  //     setEpisodesList(res.items)
+  //   } catch (err) {
+  //     console.log(err.response.data)
+  //   }
+  // }
 
 
   const value = {

@@ -13,7 +13,7 @@ const PodExperience = () => {
     className="podExperienceContainer">
 
       <div className="podExperienceContainerItem">
-        <img src={image_1} alt="selfie image" className="podExperienceImageItem" />
+        <img src={image_1} alt="Selfie image" className="podExperienceImageItem" />
         <h4 className="podExperienceTitleItem">
           {t("homeMidTitle1")}
         </h4>
@@ -23,7 +23,7 @@ const PodExperience = () => {
       </div>
 
       <div className="podExperienceContainerItem">
-        <img src={image_2} alt="image with shimon solomon" className="podExperienceImageItem" />
+        <img src={image_2} alt="Image with shimon solomon" className="podExperienceImageItem" />
         <h4 className="podExperienceTitleItem">
         {t("homeMidTitle2")}
         </h4>
@@ -33,7 +33,7 @@ const PodExperience = () => {
       </div>
 
       <div className="podExperienceContainerItem">
-        <img src={image_3} alt="image of moshe solomon in the studio" className="podExperienceImageItem" />
+        <img src={image_3} alt="Image of moshe solomon in the studio" className="podExperienceImageItem" />
         <h4 className="podExperienceTitleItem">
         {t("homeMidTitle3")}
         </h4>

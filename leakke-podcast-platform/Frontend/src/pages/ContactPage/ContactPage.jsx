@@ -25,13 +25,13 @@ const ContactPage = () => {
     {name: t("contactBottomPhoneNoTitle"), icon: phoneIcon, info: t("contactBottomPhoneNo")}
   ]
 
-  const handleSetContactForm = (e) => {
-    const { name, value } = e.target;
-    setContactForm(prevState => ({
-        ...prevState,
-        [name]: value
-    }));
-  }
+  // const handleSetContactForm = (e) => {
+  //   const { name, value } = e.target;
+  //   setContactForm(prevState => ({
+  //       ...prevState,
+  //       [name]: value
+  //   }));
+  // }
 
   useEffect(() => {
     console.log(contactForm);
@@ -71,7 +71,7 @@ const ContactPage = () => {
         </div>
 
         <div className="contactImageContainer">
-          <img src={collageImage} alt="collage of studio images" />
+          <img src={collageImage} alt="Collage of studio images" />
         </div>
       </div>
 
