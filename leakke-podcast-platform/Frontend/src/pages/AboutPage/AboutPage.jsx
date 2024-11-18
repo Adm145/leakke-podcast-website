@@ -16,7 +16,7 @@ const AboutPage = () => {
         </div>  
 
         <div>
-          <img src={aboutSelfie} alt="Selfie Image" className="aboutSelfieImage" />
+          <img src={aboutSelfie} alt="Selfie" className="aboutSelfieImage" />
         </div>
       </section>
 

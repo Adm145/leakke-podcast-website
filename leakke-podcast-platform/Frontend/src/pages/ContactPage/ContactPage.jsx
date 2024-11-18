@@ -1,5 +1,5 @@
 import './ContactPage.css'
-import { useState, useEffect } from 'react'
+// import { useState } from 'react'
 import {useTranslation} from 'react-i18next'
 import collageImage from '../../assets/Images/studio_image_collage.jpg'
 import useDirection from '../../utils/direction'
@@ -13,11 +13,11 @@ import phoneIcon from '../../assets/icons/phone_icon.png'
 const ContactPage = () => {
   const {t} = useTranslation()
   const direction = useDirection()
-  const [contactForm, setContactForm] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
+  // const [contactForm, setContactForm] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: ''
+  // })
 
   const contactInfo = [
     {name: t("contactBottomEmailTitle"), icon: emailIcon, info: t("contactBottomEmail")},
@@ -33,9 +33,6 @@ const ContactPage = () => {
   //   }));
   // }
 
-  useEffect(() => {
-    console.log(contactForm);
-  }, [contactForm])
   
   return (
     <section className="contactPageContainer">

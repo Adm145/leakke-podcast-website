@@ -1,5 +1,8 @@
 import {createContext, useState} from "react";
-import {dataApi, youtubeDataApi} from '../helpers/dataHelper';
+import {
+  dataApi,
+  // youtubeDataApi
+} from '../helpers/dataHelper';
 
 export const dataContext = createContext({});
 
@@ -18,7 +21,7 @@ export const DataProvider = ({children}) => {
   const [loading, setLoading] = useState(false)
   const [currLang, setCurrLang] = useState('he')
 
-  const [episodesList, setEpisodesList] = useState([])
+  // const [episodesList, setEpisodesList] = useState([])
 
   // useEffect(() => {
   //   handleGetEpisodesData();
