@@ -5,12 +5,11 @@ import {useContext, useEffect} from 'react';
 
 const useTranslate = () => {
   const {i18n} = useTranslation("translation")
-  const {currLang, setCurrLang, handleGetData} = useContext(dataContext);
+  const {currLang, setCurrLang} = useContext(dataContext);
 
   useEffect(() => {
     i18n.changeLanguage(currLang);
-    handleGetData(currLang);
-  }, [currLang, i18n, handleGetData]);
+  }, [currLang, i18n]);
 
   const handleLanguageChange = (lang) => {
     setCurrLang(lang);

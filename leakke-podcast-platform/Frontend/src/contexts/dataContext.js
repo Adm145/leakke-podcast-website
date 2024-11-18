@@ -20,10 +20,10 @@ export const DataProvider = ({children}) => {
 
   const [episodesList, setEpisodesList] = useState([])
 
-  useEffect(() => {
-    handleGetEpisodesData();
-    return;
-  }, [])
+  // useEffect(() => {
+  //   handleGetEpisodesData();
+  //   return;
+  // }, [])
 
   const handleGetData = async () => {
     setLoading(true);
