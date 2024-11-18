@@ -3,12 +3,14 @@ import LanguageChangeButton from '../LanguageChangeButton/LanguageChangeButton'
 import podcastLogo from '../../assets/logos/podcast_logo.png'
 import {useTranslation} from "react-i18next"
 import { useNavigate } from "react-router-dom";
+import useDirection from '../../utils/direction';
 
 
 const Header = () => {
 
   const navigate = useNavigate()
   const [t] = useTranslation("translation")
+  const direction = useDirection()
 
   const navBarItems = [
     {label: t("home"), link: "/", key: "home"},
@@ -17,36 +19,32 @@ const Header = () => {
   ]
 
   return (
-    <header className="container-fluid d-flex align-items-center justify-content-between px-3" style={{ height: '15%', backgroundColor: 'var(--light-beige)'}}>
+    <header >
 
-      <div className="d-flex flex-grow-4 align-items-center gap-3">
-        <img 
-        src={podcastLogo} 
-        alt="podcast logo" 
-        style={{width: '65px', height: '65px'}}
-        />
+      <div className="headerBrandContainer">
+        <img src={podcastLogo} alt="podcast logo" />
 
-        <h4
-        className="text-nowrap"
-        style={{color: 'var(--black)'}}
-        >Leakeberhan Yitshak Podcast</h4>
+        <h4>
+          {t("podcastTitle")}
+        </h4>
       </div>
 
       <nav 
-      className="d-flex justify-content-between align-items-center gap-5 mb"
+      className="headerNavContainer"
       style={{width: '40%'}}
       >
-         <section>
-           {navBarItems.map((item) => (
-            <button 
-            className="headerNavMenuItem mx-4 px-1" 
-            style={{color: 'var(--light-gray)'}}
-            key={item.key} 
-            onClick={() => navigate(item.link)}
-            >
-              {item.label}
-            </button>
-           ))}
+        <section
+        dir={direction}
+        >
+          {navBarItems.map((item) => (
+          <button 
+          className="headerNavMenuItem" 
+          key={item.key} 
+          onClick={() => navigate(item.link)}
+          >
+            {item.label}
+          </button>
+          ))}
         </section>
         <LanguageChangeButton />
       </nav>

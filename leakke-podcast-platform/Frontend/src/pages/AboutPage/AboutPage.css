@@ -1,7 +1,15 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  background-color: var(--beige);
+}
+
 .aboutTopContainer {
   display: flex;
   justify-content: end;
-  align-items: start;
+  align-items: center;
   margin: 3rem 0;
   padding: 0 5rem;
 }
@@ -10,8 +18,10 @@
   font-family: var(--bebas);
   font-size: 5rem;
   font-style: italic;
-  width: 60%;
+  width: 90%;
+  text-align: center;
   text-wrap: wrap;
+  margin: auto;
   color: var(--brown);
   -webkit-text-stroke-width: 2px;
 }
@@ -22,6 +32,7 @@
 }
 
 .aboutBottomContainer {
+  padding: 0 3rem;
   display: flex;
   flex-direction: column;
 }

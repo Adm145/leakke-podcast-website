@@ -1,6 +1,57 @@
-.footerNavMenuItem {
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 13rem;
+  padding: 5rem 30rem;
+  background-color: var(--light-beige)
+}
+
+footer section {
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.footerNavContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.footerNavContainer h3 {
+  color: var(--brown);
+}
+
+.footerNavContainer button {
   border: none;
   background-color: transparent;
   transition: color 0.3s, border-bottom 0.3s;
   color: var(--light-brown);
+}
+
+.footerSocialsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  margin-right: 3rem;
+}
+
+.footerSocialsContainer h4 {
+  color: var(--brown);
+}
+
+.footerSocialsContainer div {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  gap: 1rem;
+}
+
+.footerSocialsContainer div a img {
+  height: 2rem;
 }

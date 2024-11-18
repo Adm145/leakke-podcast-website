@@ -8,14 +8,11 @@ const AboutPage = () => {
   const { t } = useTranslation();
 
   return (
-    <main
-    className="border d-flex flex-column justify-content-center align-items-end"
-    style={{backgroundColor: 'var(--beige)'}}>
+    <main className="aboutContainer">
 
-      <section
-      className="aboutTopContainer">
-        <div className="aboutTopTextContainer">
-          <p >"I BELIEVE IN THE POWER OF CONVERSATION"</p>
+      <section className="aboutTopContainer">
+        <div dir={direction} className="aboutTopTextContainer">
+          <p >"{t("aboutTopText")}"</p>
         </div>  
 
         <div>
@@ -23,15 +20,9 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section
-      // dir={direction}
-      className="aboutBottomContainer container-fluid px-5">
-        <p>
-          As a dedicated community member and a voice within the Ethiopian-Israeli comminuty, I have always been passionate about the power of conversation. I believe that through open and honest dialogue, we can create a more inclusive and understanding society. This is why I have created the Leakeberhan Podcast Platform, a space where we can come together to share our stories, experiences, and ideas. I hope that this platform will serve as a catalyst for change and inspire others to join the conversation. Together, we can build a brighter future for all members of our community.
-        </p>
-        <h3>
-          -"Through thoughtful conversation, I hope to uncover the resilience, wisdom and creativity that makes our community so unique."-
-        </h3>
+      <section dir={direction} className="aboutBottomContainer">
+        <p>{t("aboutBottomParagraph")}</p>
+        <h3>-"{t("aboutBottomQuote")}"-</h3>
       </section>
 
     </main>

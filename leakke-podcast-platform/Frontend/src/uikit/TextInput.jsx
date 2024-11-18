@@ -1,4 +1,3 @@
-import './TextInput.css'
 import { TextField } from "@mui/material"
 
 const TextInput = ({ id, label, value, onChange, type, placeholder, multiline }) => {
@@ -6,7 +5,7 @@ const TextInput = ({ id, label, value, onChange, type, placeholder, multiline })
   return (
     <div className='TextInput'>
       <TextField 
-      variant="standard" 
+      variant="outlined" 
       id={id} 
       label={label} 
       value={value}

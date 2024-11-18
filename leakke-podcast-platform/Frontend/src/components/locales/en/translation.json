@@ -1,38 +1,64 @@
 {
   "language": "English",
 
+  "podcastTitle": "Leakeberhan Yitshak Podcast",
+
   "home": "Home",
   "about": "About",
   "contact": "Contact Me",
 
-  "homePageTopText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+  "homeTopTitle": "Exploring the Ethiopian Community in Israel",
+  "homeTopText": "welcome to our podcast, where we shine a light on the diverse stories from the Ethiopian community in Israel",
+
+  
+  "homeMidTitle1": "The Podcast Experience",
+  "homeMidText1": "Discover a curated collection of episodes",
+
+  "homeMidTitle2": "Authentic Voices",
+  "homeMidText2": "Hear from a diverse range of guests of the community, from leaders to everyday individuals",
+ 
+  "homeMidTitle3": "Connecting Through",
+  "homeMidText3": "Immerse yourself in the richness of the Ethiopian-Israeli experiece, as we explore the past, present, and future",
+
+
+  "HomeBottomTitle1": "Amplifying Ethiopian Voices in Israel",
+  "HomeBottomText1": "This podcast celebrates the resilience, creativity, and spirit of the Ethiopian-Israeli community. Through heartfelt conversations, it highlights stories that inspire connection and foster a deeper understanding of Ethiopian heritage and the diverse experiences within Israel.",
+  
+  "HomeBottomTitle2": "About the Podcast",
+  "HomeBottomText2": "The Community Voices podcast is a platform for Ethiopian-Israelis to share their stories, experiences, and perspectives. Through interviews and conversations, the podcast aims to amplify the voices of the Ethiopian community",
+
+  
+  "aboutTopText": "I BELIEVE IN THE POWER OF CONVERSATION",
+  "aboutBottomParagraph": "As a dedicated community member and a voice within the Ethiopian-Israeli comminuty, I have always been passionate about the power of conversation. I believe that through open and honest dialogue, we can create a more inclusive and understanding society. This is why I have created the Leakeberhan Podcast Platform, a space where we can come together to share our stories, experiences, and ideas. I hope that this platform will serve as a catalyst for change and inspire others to join the conversation. Together, we can build a brighter future for all members of our community.",
+  "aboutBottomQuote": "Through thoughtful conversation, I hope to uncover the resilience, wisdom and creativity that makes our community so unique.",
+
+
+  "contactTopTitle": "Let's Get in Touch",
+  "contactTopText": "Fill out the form below, and I'll get back you soon!",
+
+  "contactFormNamePlaceholder": "Name",
+  "contactFormEmailPlaceholder": "Email",
+  "contactFormMessagePlaceholder": "Message",
+  "contactFormSubmit": "Submit",
+
+  "contactBottomTitle": "Or Reach Out Directly",
+
+  "contactBottomEmailTitle": "Email",
+  "contactBottomEmail": "lakebr11@gmail.com | izhak@ashkelon@muni.il",
+
+  "contactBottomLocationTitle": "Location",
+  "contactBottomLocation": "Ashkelon, Hanor Haoved 10/16",
+
+  "contactBottomPhoneNoTitle": "PhoneNo",
+  "contactBottomPhoneNo": "08-6748145 | 0502323013",
+
 
   "followMe": "Follow Me!",
   "help": "Help",
 
+  
   "creditText": "This website was designed and developed by",
   "creditName": "Adam Solomon Eyassu",
-  "creditEmail": "adamyaso@gmail.com",
-
-  "aboutTab-Bio": "Biography",
-  "aboutTab-Education": "Education",
-  "aboutTab-Experience": "Experience",
-
-  "latestEpisodes": "Watch the Latest Episodes Here:",
-
-  "bio": "Personal Info",
-  "publicActivity": "Public Activity",
-  "work": "Work History",
-  "socialWork": "Social Work",
-  "education": "Degrees and Certificates",
-  "courses": "Courses",
-
-  "fullName": "Name",
-  "familyStatus": "Family Status",
-  "address": "Address",
-  "workNo": "Work Number",
-  "cellNo": "Personal Number",
-  "email": "Email",
-  "brief": "About Me",
-  "languages": "Languages"
+  "creditEmail": "adamyaso@gmail.com"
 }

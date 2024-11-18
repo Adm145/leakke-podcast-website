@@ -1,12 +1,12 @@
 import './HomePage.css'
-import Intro from './Intro/Intro'
+import Landing from './Landing/Landing'
 import CommunityVoices from './CommunityVoices/CommunityVoices'
 import PodExperience from './PodExperience/PodExperience'
 
 const HomePage = () => {
   return (
     <main className="container-fluid mx-0 px-0">
-      <Intro />
+      <Landing />
       <PodExperience />
       <CommunityVoices />
     </main>

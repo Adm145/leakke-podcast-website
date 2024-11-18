@@ -1,0 +1,126 @@
+.contactPageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--beige);
+}
+
+.contactFormContainer {
+  display: flex;
+  align-items: strech;
+  height: 80%;
+  width: 70%;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactTextContainer {
+  width: 60%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactTextContainer h1 {
+  color: var(--brown);
+}
+
+.contactTextContainer p:first-child {
+  color: var(--light-gray);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 1rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--brown);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 1px solid var(--beige);
+  outline: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: var(--brown);
+}
+
+.contactForm>button {
+  padding: 0.8rem;
+  width: 25%;
+  background: linear-gradient(90deg, var(--beige) 0%, var(--light-beige) 100%);
+  color: var(--brown);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.contactInfoContainer h4 {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: var(--brown);
+  font-style: italic;
+}
+
+.contactInfoItemContainer {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contactIconContainer img {
+  width: 3rem;
+  background-color: var(--beige);
+  border-radius: 50%;
+  padding: 0.5rem 0.5rem;
+}
+
+.contactDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.contactDetailsContainer span:first-child {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+.contactDetailsContainer span:last-child {
+  color: var(--light-gray);
+}
+
+.contactImageContainer {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contactImageContainer>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

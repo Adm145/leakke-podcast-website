@@ -1,9 +1,41 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 7vh;
+  background-color: var(--light-beige);
+}
+
+.headerBrandContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.headerBrandContainer img {
+  width: 65px;
+  height: 65px;
+}
+
+.headerBrandContainer h4 {
+  color: var(--black);
+  text-wrap: nowrap;
+}
+
+.headerNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .headerNavMenuItem {
   background-color: transparent;
   border: none;
   border-bottom: 1px transparent solid;
-  /* padding: 0 2em; */
-  color: white;
+  color: var(--light-gray);
+  margin: 0 2rem;
+  padding: 0 .5rem;
   transition: all 0.3s;
 }
 

@@ -1,0 +1,39 @@
+.landingContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  background-color: var(--beige);
+}
+
+.landingImageContainer {
+  display: flex;
+}
+
+.landingTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  gap: 2rem;
+}
+
+.landingTextContainer>h1 {
+  width: 75%;
+  font-size: 5rem;
+  font-family: var(--glass-antiqua), Arial;
+}
+
+.landingTextContainer>p {
+  font-size: 1.2rem;
+  width: 75%;
+  text-wrap: wrap;
+  margin: auto;
+}
+
+.socialMediaLinkItem {
+  padding: 0 .2rem;
+  height: 2rem;
+  border-radius: 25%;
+}
