@@ -90,7 +90,7 @@ export const DataProvider = ({children}) => {
     currLang, setCurrLang,
     loading, setLoading,
     images, setImages,
-    episodesList,
+    // episodesList,
 
     //functions
     handleGetData,
