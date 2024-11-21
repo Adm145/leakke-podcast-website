@@ -1,18 +1,29 @@
+import {useContext, useEffect} from 'react';
 import {useTranslation} from "react-i18next"
 import {dataContext} from '../contexts/dataContext';
-import {useContext, useEffect} from 'react';
-
 
 const useTranslate = () => {
   const {i18n} = useTranslation("translation")
   const {currLang, setCurrLang} = useContext(dataContext);
 
   useEffect(() => {
-    i18n.changeLanguage(currLang);
+    const language = localStorage.getItem('appLanguage') || currLang;
+    console.log("🚀 ~ useEffect ~ language:", language);
+    i18n.changeLanguage(language);
   }, [currLang, i18n]);
 
+  // useEffect(() => {
+  //   i18n.changeLanguage(currLang);
+  // }, [currLang, i18n]);
+
+  // const handleLanguageChange = (lang) => {
+  //   setCurrLang(lang)
+  // }
+
+
   const handleLanguageChange = (lang) => {
-    setCurrLang(lang);
+    setCurrLang(lang)
+    localStorage.setItem('appLanguage', lang)
   }
 
   const values = {
