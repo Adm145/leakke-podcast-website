@@ -1,11 +1,11 @@
 import './Footer.css'
 import { useTranslation } from 'react-i18next'
-import { socialLinksBlack } from '../../utils/icons'
 import { useNavigate } from "react-router-dom";
-import useDirection from '../../utils/direction';
+import { socialLinksBlack } from 'Utils';
+import { useDirection } from 'Hooks';
 
 
-const Footer = () => {
+export const Footer = () => {
   const navigate = useNavigate()
   const {t} = useTranslation('translation')
   const direction = useDirection()
@@ -51,4 +51,3 @@ const Footer = () => {
     </footer>
   )
 }
-export default Footer

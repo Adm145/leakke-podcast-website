@@ -1,10 +1,10 @@
 import './Landing.css';
 import selfImage1 from '../../../assets/Images/self_image_1.png'
-import { socialLinksBlack } from '../../../utils/icons';
+import { socialLinksBlack } from 'Utils';
 import { useTranslation } from "react-i18next"
-import useDirection from "../../../utils/direction"
+import {useDirection} from "Hooks"
 
-const Landing = () => {
+export const Landing = () => {
   const direction = useDirection();
   const { t } = useTranslation();
 
@@ -32,4 +32,3 @@ const Landing = () => {
     </section>
   )
 }
-export default Landing

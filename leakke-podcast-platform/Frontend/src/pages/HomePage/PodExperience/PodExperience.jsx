@@ -4,7 +4,7 @@ import image_2 from "../../../assets/Images/selfie_with_shimon_solomon.jpg"
 import image_3 from "../../../assets/Images/moshe_solomon_studio.jpg"
 import {useTranslation} from "react-i18next"
 
-const PodExperience = () => {
+export const PodExperience = () => {
 
   const { t } = useTranslation()
 
@@ -45,5 +45,3 @@ const PodExperience = () => {
     </section>
   )
 }
-
-export default PodExperience

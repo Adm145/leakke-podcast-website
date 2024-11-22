@@ -13,6 +13,4 @@ export const socialLinksBlack = [
   {name: "youtube", link: youtubeLink, logo: YoutubeIcon},
   {name: "spotify", link: spotifyLink, logo: SpotifyIcon},
   {name: "apple podcast", link: applePodcastLink, logo: ApplePodcastIcon}
-]
-
-
+];

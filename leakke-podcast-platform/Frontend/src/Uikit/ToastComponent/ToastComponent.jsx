@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import { dataContext } from '../contexts/dataContext';
+import { dataContext } from 'Context';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
-const ToastComponent = () => {
+export const ToastComponent = () => {
   const {showToast, setShowToast, toastMessage, toastSeverity} = useContext(dataContext);
 
   const handleClose = (event, reason) => {
@@ -29,5 +29,3 @@ const ToastComponent = () => {
     </div>
   );
 }
-
-export default ToastComponent;

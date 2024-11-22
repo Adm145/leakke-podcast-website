@@ -1,11 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
-import AboutPage from "./pages/AboutPage/AboutPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import ShamelessPlug from "./components/ShamelessPlug/ShamelessPlug";
+import { HomePage, AboutPage, ContactPage } from "Pages";
+import { Header, Footer, ShamelessPlug  } from "Components";
 
 function App() {
   return (
@@ -20,7 +16,7 @@ function App() {
 
       <Footer />
 
-      <ShamelessPlug />
+      <ShamelessPlug /> 
     </main>
   );
 }

@@ -1,6 +1,6 @@
 import i18next from 'i18next';
-import translationHE from '../components/locales/he/translation.json';
-import translationEN from '../components/locales/en/translation.json';
+import translationHE from '../Components/locales/he/translation.json';
+import translationEN from '../Components/locales/en/translation.json';
 
 const savedLanguage = localStorage.getItem('appLanguage') || 'he';
 
@@ -12,5 +12,4 @@ i18next.init({
     en: {translation: translationEN}
   }
 })
-
 export default i18next;

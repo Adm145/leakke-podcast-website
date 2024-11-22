@@ -1,14 +1,13 @@
 import axios from "axios";
 import {useContext} from "react";
 import {useTranslation} from 'react-i18next'
-import {dataContext} from "../contexts/dataContext";
+import {dataContext} from "Context";
 
 import emailIcon from '../assets/icons/email_icon.png'
 import locationIcon from '../assets/icons/location_icon.png'
 import phoneIcon from '../assets/icons/phone_icon.png'
 
-
-const useForm = () => {
+export const useForm = () => {
   const {t} = useTranslation()
 
   const {
@@ -65,5 +64,3 @@ const useForm = () => {
   return values;
 
 }
-
-export default useForm;

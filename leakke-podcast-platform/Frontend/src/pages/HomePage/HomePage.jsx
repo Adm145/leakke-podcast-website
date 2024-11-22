@@ -1,9 +1,7 @@
 import './HomePage.css'
-import Landing from './Landing/Landing'
-import CommunityVoices from './CommunityVoices/CommunityVoices'
-import PodExperience from './PodExperience/PodExperience'
+import { Landing, PodExperience, CommunityVoices } from 'Pages'
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <main className="container-fluid mx-0 px-0">
       <Landing />
@@ -12,4 +10,3 @@ const HomePage = () => {
     </main>
   )
 }
-export default HomePage

@@ -1,16 +1,15 @@
 import './ContactPage.css'
 import { useContext } from 'react'
-import { dataContext } from '../../contexts/dataContext'
 import {useTranslation} from 'react-i18next'
+import { dataContext } from 'Context'
+import {useForm, useDirection} from 'Hooks'
+import {ToastComponent} from 'Uikit'
 import collageImage from '../../assets/Images/studio_image_collage.jpg'
-import useDirection from '../../utils/direction'
-import useForm from '../../hooks/useForm'
-import ToastComponent from '../../uikit/ToastComponent'
 
 import { dotStream } from 'ldrs'
 dotStream.register()
 
-const ContactPage = () => {
+export const ContactPage = () => {
   const {t} = useTranslation()
   const direction = useDirection()
   const {sumbitContactForm, contactInfo} = useForm();
@@ -82,4 +81,3 @@ const ContactPage = () => {
     </section>
   )
 }
-export default ContactPage

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
-import useDirection from '../../utils/direction'
+import {useDirection} from 'Hooks'
 
-const ShamelessPlug = () => {
+export const ShamelessPlug = () => {
   
   const direction = useDirection()
   const {t} = useTranslation('translation')
@@ -17,4 +17,3 @@ const ShamelessPlug = () => {
     </section>
   )
 }
-export default ShamelessPlug

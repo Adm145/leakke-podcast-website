@@ -1,9 +1,9 @@
 import "./AboutPage.css"
 import { useTranslation } from "react-i18next"
-import useDirection from "../../utils/direction"
+import {useDirection} from "Hooks"
 import aboutSelfie from "../../assets/Images/studio_image.jpg"
 
-const AboutPage = () => {
+export const AboutPage = () => {
   const direction = useDirection();
   const { t } = useTranslation();
 
@@ -28,4 +28,3 @@ const AboutPage = () => {
     </main>
   )
 }
-export default AboutPage

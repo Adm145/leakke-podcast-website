@@ -16,7 +16,6 @@ export const DataProvider = ({children}) => {
   const [currLang, setCurrLang] = useState(() => {
     return localStorage.getItem('appLanguage') || 'he'
   })
-  // const [currLang, setCurrLang] = useState('he')
 
   useEffect(() => {
     localStorage.setItem('appLanguage', currLang)

@@ -1,7 +1,7 @@
 import './CommunityVoices.css'
 import {useTranslation} from 'react-i18next'
 
-const CommunityVoices = () => {
+export const CommunityVoices = () => {
   const { t } = useTranslation()
 
   return (
@@ -23,4 +23,3 @@ const CommunityVoices = () => {
     </section>
   )
 }
-export default CommunityVoices

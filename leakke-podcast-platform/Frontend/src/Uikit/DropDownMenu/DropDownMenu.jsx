@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
-const DropDownInput = ({options, onSelect, lable}) => {
+export const DropDownMenu = ({options, onSelect, lable}) => {
   const [selectedOption, setSelectedOption] = React.useState(lable);
 
   const handleOptionClicked = (popupState, option) => {
@@ -39,5 +39,3 @@ const DropDownInput = ({options, onSelect, lable}) => {
     </PopupState>
   );
 }
-
-export default DropDownInput;
