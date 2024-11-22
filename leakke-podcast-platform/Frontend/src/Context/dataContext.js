@@ -6,10 +6,10 @@ const Provider = dataContext.Provider;
 
 export const DataProvider = ({children}) => {
   const [contactForm, setContactForm] = useState({
-    שם: '',
-    אימייל: '',
-    הודעה: '',
-    access_key: process.env.REACT_APP_WEB3FORMS_API
+    name: '',
+    email: '',
+    message: '',
+    access_key: '8708ddcf-4b00-452d-b93e-c0885079b576'
   })
 
   const [isLoading, setIsLoading] = useState(false)

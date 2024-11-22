@@ -1,0 +1,38 @@
+.contactInfoContainer h4 {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: var(--brown);
+  font-style: italic;
+}
+
+.contactInfoItemContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contactIconContainer img {
+  width: 3rem;
+  background-color: var(--beige);
+  border-radius: 50%;
+  padding: 0.5rem 0.5rem;
+}
+
+.contactDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.contactDetailsContainer span:first-child {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+.contactDetailsContainer span:last-child {
+  color: var(--light-gray);
+}

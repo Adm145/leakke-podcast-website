@@ -1,5 +1,5 @@
 import axios from "axios";
-import {useContext} from "react";
+import {useContext, useEffect} from "react";
 import {useTranslation} from 'react-i18next'
 import {dataContext} from "Context";
 
@@ -43,13 +43,13 @@ export const useForm = () => {
     try {
       await axios.post('https://api.web3forms.com/submit', contactForm)
       setIsLoading(false);
-      setContactForm({שם: '', אימייל: '', הודעה: '', access_key: process.env.REACT_APP_WEB3FORMS_API});
+      setContactForm({name: '', email: '', message: ''});
       setShowToast(true);
       setToastSeverity('success');
       setToastMessage('ההודעה נשלחה בהצלחה');
     } catch (error) {
       setIsLoading(false);
-      console.log(error.response?.data?.message || 'שגיאה בשליחת ההודעה');
+      console.log(error);
       setShowToast(true);
       setToastSeverity('error');
       setToastMessage('ההודעה לא נשלחה, אנא נסו שוב');
